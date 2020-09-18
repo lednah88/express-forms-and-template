@@ -1,0 +1,24 @@
+{
+  "name": "rixongile-manyobe-279-express-forms-and-templates-",
+  "version": "1.0.0",
+  "description": "Express, forms and templates (279) For raw project instructions see: https://raw.githubusercontent.com/Umuzi-org/tech-department/master/content/projects/nodejs/express-forms/_index.md",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^2.99.0",
+    "supertest": "^3.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umuzi-org/Rixongile-Manyobe-279-express-forms-and-templates-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umuzi-org/Rixongile-Manyobe-279-express-forms-and-templates-/issues"
+  },
+  "homepage": "https://github.com/Umuzi-org/Rixongile-Manyobe-279-express-forms-and-templates-#readme"
+}
