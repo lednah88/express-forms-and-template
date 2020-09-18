@@ -1,4 +1,4 @@
-const request = require('supertest')
+const supertest = require('supertest')
 const server = require('../src/express')
 var serverInstance
 beforeEach((done)=>{

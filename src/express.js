@@ -1,4 +1,4 @@
-const express = require("../node_modules/express");
+const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const port = 3001;
@@ -12,12 +12,12 @@ var MongoDB = "mongodb://127.0.0.1/VisitorDB";
 mongoose.connect(MongoDB, { useUnifiedTopology: true, useNewUrlParser: true });
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
-app.get("/", (request,response) => {
+app.get("/", (request, response) => {
   response.sendFile(path.join(__dirname + "./index.html"));
 });
 app.post("/", (req, res) => {
   addNewVisitor(req.body);
-  res.send(req.body)
+  res.send(req.body);
   db.collection("new_visit")
     .find()
     .sort({ _id: -1 })
@@ -40,6 +40,7 @@ app.post("/", (req, res) => {
 function addNewVisitor(req) {
   db.collection("new_visit").insertOne(req);
 }
-app.listen(port, () => {
+var server = app.listen(port, () => {
   console.log(`database started on ://localhost: ${port}`);
 });
+module.exports = server;

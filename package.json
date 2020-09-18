@@ -4,7 +4,12 @@
   "description": "Express, forms and templates (279) For raw project instructions see: https://raw.githubusercontent.com/Umuzi-org/tech-department/master/content/projects/nodejs/express-forms/_index.md",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "jasmine": "^2.99.0",
+    "mongoose": "^5.10.5",
+    "path": "^0.12.7",
+    "pug": "^3.0.0",
     "supertest": "^3.4.2"
   },
   "devDependencies": {},
